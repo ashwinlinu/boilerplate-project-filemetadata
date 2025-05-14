@@ -4,7 +4,7 @@ require('dotenv').config()
 const multer = require('multer');
 var app = express();
 
-const storage = multer.memoryStorage(); // Or use diskStorage for saving files
+const storage = multer.memoryStorage(); 
 const upload = multer({ storage: storage });
 
 app.use(cors());
